@@ -1,0 +1,62 @@
+ERROR - 2022-07-04 01:06:11 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-07-04 01:06:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 E:\xampp\htdocs\toko-api\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\xampp\htdocs\toko-api\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `me...', Array, false)
+#2 E:\xampp\htdocs\toko-api\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 E:\xampp\htdocs\toko-api\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 E:\xampp\htdocs\toko-api\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 E:\xampp\htdocs\toko-api\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 E:\xampp\htdocs\toko-api\app\Controllers\RegistrasiController.php(17): CodeIgniter\BaseModel->save(Array)
+#7 E:\xampp\htdocs\toko-api\system\CodeIgniter.php(832): App\Controllers\RegistrasiController->registrasi()
+#8 E:\xampp\htdocs\toko-api\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistrasiController))
+#9 E:\xampp\htdocs\toko-api\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\toko-api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-07-04 14:20:35 --> Unknown column 'keterangan' in 'field list'
+CRITICAL - 2022-07-04 14:20:35 --> Unknown column 'keterangan' in 'field list'
+#0 E:\xampp\htdocs\darah\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `st...', 0)
+#1 E:\xampp\htdocs\darah\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 E:\xampp\htdocs\darah\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 E:\xampp\htdocs\darah\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 E:\xampp\htdocs\darah\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\darah\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\darah\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\darah\app\Controllers\StokController.php(18): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\darah\system\CodeIgniter.php(832): App\Controllers\StokController->create()
+#9 E:\xampp\htdocs\darah\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StokController))
+#10 E:\xampp\htdocs\darah\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\darah\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-07-04 14:23:47 --> Column 'harga' cannot be null
+CRITICAL - 2022-07-04 14:23:47 --> Column 'harga' cannot be null
+#0 E:\xampp\htdocs\darah\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\darah\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\darah\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\darah\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\xampp\htdocs\darah\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\darah\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\darah\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\darah\app\Controllers\ProdukController.php(18): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\darah\system\CodeIgniter.php(832): App\Controllers\ProdukController->create()
+#9 E:\xampp\htdocs\darah\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+#10 E:\xampp\htdocs\darah\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\darah\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-07-04 14:25:33 --> Column 'harga' cannot be null
+CRITICAL - 2022-07-04 14:25:33 --> Column 'harga' cannot be null
+#0 E:\xampp\htdocs\darah\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\darah\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\darah\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\darah\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\xampp\htdocs\darah\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\darah\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\darah\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\darah\app\Controllers\ProdukController.php(18): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\darah\system\CodeIgniter.php(832): App\Controllers\ProdukController->create()
+#9 E:\xampp\htdocs\darah\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+#10 E:\xampp\htdocs\darah\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\darah\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
